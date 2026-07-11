@@ -568,17 +568,30 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   padding-top: 1.75rem;
 }
 
+.person-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 7;
+  object-fit: cover;
+  background: var(--ivory);
+  filter: saturate(0.82);
+  transition: filter 0.45s var(--ease-out);
+  margin-bottom: 1.5rem;
+}
+
+.person:hover .person-photo { filter: saturate(1); }
+
 .person-mono {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 6 / 7;
   background: var(--ivory);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.125rem;
+  font-size: 2.5rem;
   color: var(--ink);
   margin-bottom: 1.5rem;
 }
