@@ -164,6 +164,7 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   top: 0;
   z-index: 100;
   background: var(--ink);
+  border-bottom: 1px solid rgba(154, 143, 77, 0.45);
   transition: box-shadow 0.35s;
 }
 
@@ -555,64 +556,82 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
 
 .tenet p { font-size: 0.9375rem; color: var(--slate-light); max-width: 26em; }
 
-/* ---------- Team ---------- */
+/* ---------- Team — COPSIN personnel-block treatment ---------- */
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(1.5rem, 2.5vw, 2.5rem);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: clamp(2.5rem, 5vw, 5rem);
+  border-top: 1px solid rgba(23, 37, 54, 0.14);
 }
 
 .person {
-  border-top: 1px solid rgba(23, 37, 54, 0.14);
-  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding-block: 1.6rem;
+  border-bottom: 1px solid rgba(23, 37, 54, 0.14);
 }
 
 .person-photo {
-  display: block;
-  width: 100%;
+  flex: 0 0 6rem;
+  width: 6rem;
   height: auto;
   aspect-ratio: 6 / 7;
   object-fit: cover;
-  background: var(--ivory);
-  filter: saturate(0.82);
+  background: var(--ivory-soft);
+  filter: saturate(0.85);
   transition: filter 0.45s var(--ease-out);
-  margin-bottom: 1.5rem;
 }
 
 .person:hover .person-photo { filter: saturate(1); }
 
 .person-mono {
+  flex: 0 0 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 6rem;
   aspect-ratio: 6 / 7;
-  background: var(--ivory);
+  background: var(--ink);
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 2.5rem;
-  color: var(--ink);
-  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: var(--gold-bright);
 }
 
-.person-mono-gold { background: var(--ink); color: var(--gold-bright); }
+.person-info { min-width: 0; }
 
-.person h3 { font-size: 1.3125rem; margin-bottom: 0.35rem; }
-
-.person-role {
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  color: var(--slate-deep);
+.person h3 {
+  font-size: 1.3125rem;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
 }
 
 .person-creds {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--slate-light);
-  margin-top: 0.5rem;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+.person-role {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.person-note {
+  font-size: 0.875rem;
+  color: var(--slate-deep);
+  line-height: 1.6;
 }
 
 .team-roster {
@@ -754,8 +773,6 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   gap: 2.5rem 4rem;
   align-items: center;
   padding-bottom: clamp(3rem, 6vw, 4.5rem);
-  margin-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(185, 192, 202, 0.15);
 }
 
 .footer-cta-links { display: flex; flex-direction: column; gap: 0.75rem; }
@@ -780,11 +797,24 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
 }
 
 .footer-bottom {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem 2.5rem;
   flex-wrap: wrap;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(185, 192, 202, 0.25);
+}
+
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 3.5rem;
+  height: 3px;
+  background: var(--gold);
 }
 
 .wordmark-footer { font-size: 1rem; }
