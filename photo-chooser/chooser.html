@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praxis — hero photo chooser</title>
+<style>
+  body { font-family: "Segoe UI", sans-serif; background: #F2EFE9; color: #172536; margin: 0; padding: 2.5rem clamp(1rem, 4vw, 3rem); }
+  h1 { font-weight: 500; } h2 { margin-top: 2.75rem; border-bottom: 2px solid #172536; padding-bottom: .4rem; }
+  p.help { color: #5A6472; max-width: 60em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+  .card { position: relative; display: block; background: #fff; text-decoration: none; color: inherit; box-shadow: 0 8px 24px -12px rgba(23,37,54,.35); }
+  .card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; }
+  .tag { position: absolute; top: .6rem; left: .6rem; background: #172536; color: #fff; font-size: .8rem; font-weight: 600; letter-spacing: .08em; padding: .25rem .6rem; }
+  .meta { display: block; padding: .5rem .75rem; font-size: .75rem; color: #5A6472; }
+</style></head><body>
+<h1>Choose the hero photos</h1>
+<p class="help"><b>Click your favourite in each city</b> — a gold ring marks your pick; click again to unpick (no pick = city left out). Use the <i>full size ⤢</i> button on a card to inspect it in a new tab. Your picks appear in the bar at the bottom; when you're happy, just tell Claude you're done.</p>
+<h2>Toronto</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg/960px-Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-1.jpg?r=2" alt="toronto-1" loading="lazy">
+      <span class="tag">toronto-1</span>
+      <span class="meta">6759&times;3001 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Toronto_-_ON_-_Skyline10.jpg/960px-Toronto_-_ON_-_Skyline10.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-2.jpg?r=2" alt="toronto-2" loading="lazy">
+      <span class="tag">toronto-2</span>
+      <span class="meta">4030&times;2714 · FAL</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/122_-_Toronto_-_Septembre_2009.jpg/960px-122_-_Toronto_-_Septembre_2009.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-3.jpg?r=2" alt="toronto-3" loading="lazy">
+      <span class="tag">toronto-3</span>
+      <span class="meta">16700&times;4478 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Toronto_-_ON_-_Skyline_bei_Nacht.jpg/960px-Toronto_-_ON_-_Skyline_bei_Nacht.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-4.jpg?r=2" alt="toronto-4" loading="lazy">
+      <span class="tag">toronto-4</span>
+      <span class="meta">4006&times;2808 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sunset_Toronto_Skyline_Panorama_from_Snake_Island.jpg/960px-Sunset_Toronto_Skyline_Panorama_from_Snake_Island.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-5.jpg?r=2" alt="toronto-5" loading="lazy">
+      <span class="tag">toronto-5</span>
+      <span class="meta">13675&times;3281 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/126_-_Toronto_-_Panorama_-_Septembre_2009.JPG/960px-126_-_Toronto_-_Panorama_-_Septembre_2009.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/toronto-6.jpg?r=2" alt="toronto-6" loading="lazy">
+      <span class="tag">toronto-6</span>
+      <span class="meta">12288&times;4410 · CC BY-SA 3.0</span>
+    </a></div><h2>Niagara Falls</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Niagara_Falls_Horseshoe_Falls_03.jpg/960px-Niagara_Falls_Horseshoe_Falls_03.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-1.jpg?r=2" alt="niagara-1" loading="lazy">
+      <span class="tag">niagara-1</span>
+      <span class="meta">4032&times;3024 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Niagara_Falls_Horseshoe_aerial_view.jpg/960px-Niagara_Falls_Horseshoe_aerial_view.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-2.jpg?r=2" alt="niagara-2" loading="lazy">
+      <span class="tag">niagara-2</span>
+      <span class="meta">4894&times;3200 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Niagara_Falls%2C_Ontario%2C_Canada%3B_Horseshoe_Falls_%28I0015560%29.jpg/960px-Niagara_Falls%2C_Ontario%2C_Canada%3B_Horseshoe_Falls_%28I0015560%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-3.jpg?r=2" alt="niagara-3" loading="lazy">
+      <span class="tag">niagara-3</span>
+      <span class="meta">2482&times;1951 · OGL-ON</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Niagara_Falls%2C_Ontario%2C_Canada%3B_Horseshoe_Falls_%28I0015559%29.jpg/960px-Niagara_Falls%2C_Ontario%2C_Canada%3B_Horseshoe_Falls_%28I0015559%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-4.jpg?r=2" alt="niagara-4" loading="lazy">
+      <span class="tag">niagara-4</span>
+      <span class="meta">2477&times;1939 · OGL-ON</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Aerial_Horseshoe_Falls_banner.jpg/960px-Aerial_Horseshoe_Falls_banner.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-5.jpg?r=2" alt="niagara-5" loading="lazy">
+      <span class="tag">niagara-5</span>
+      <span class="meta">2100&times;300 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Aerial_view_of_the_Canadian_Falls_%28Horseshoe_Falls%29_and_the_Hornblower_Niagara_Cruises_boat%3B_Niagara_Falls.JPG/960px-Aerial_view_of_the_Canadian_Falls_%28Horseshoe_Falls%29_and_the_Hornblower_Niagara_Cruises_boat%3B_Niagara_Falls.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/niagara-6.jpg?r=2" alt="niagara-6" loading="lazy">
+      <span class="tag">niagara-6</span>
+      <span class="meta">3966&times;2974 · CC BY-SA 4.0</span>
+    </a></div><h2>Montréal</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Montreal_Twilight_Panorama_2006.jpg/960px-Montreal_Twilight_Panorama_2006.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-1.jpg?r=2" alt="montreal-1" loading="lazy">
+      <span class="tag">montreal-1</span>
+      <span class="meta">9017&times;2724 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Montreal_panorama.jpg/960px-Montreal_panorama.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-2.jpg?r=2" alt="montreal-2" loading="lazy">
+      <span class="tag">montreal-2</span>
+      <span class="meta">10000&times;2240 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Panorama_Montreal_Skyline_2017.jpg/960px-Panorama_Montreal_Skyline_2017.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-3.jpg?r=2" alt="montreal-3" loading="lazy">
+      <span class="tag">montreal-3</span>
+      <span class="meta">8206&times;2354 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Montreal_Skyline_from_Mont_Royal.jpg/960px-Montreal_Skyline_from_Mont_Royal.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-4.jpg?r=2" alt="montreal-4" loading="lazy">
+      <span class="tag">montreal-4</span>
+      <span class="meta">25603&times;4755 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Montreal_Skyline_from_Mont_Royal_50mm.jpg/960px-Montreal_Skyline_from_Mont_Royal_50mm.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-5.jpg?r=2" alt="montreal-5" loading="lazy">
+      <span class="tag">montreal-5</span>
+      <span class="meta">29780&times;5790 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vista_de_Montreal_desde_el_Monte_Royal%2C_Canad%C3%A1%2C_2017-08-12%2C_DD_126-137_HDR_PAN.jpg/960px-Vista_de_Montreal_desde_el_Monte_Royal%2C_Canad%C3%A1%2C_2017-08-12%2C_DD_126-137_HDR_PAN.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/montreal-6.jpg?r=2" alt="montreal-6" loading="lazy">
+      <span class="tag">montreal-6</span>
+      <span class="meta">14772&times;3750 · CC BY-SA 4.0</span>
+    </a></div><h2>Ottawa</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Parliament_Hill_from_the_Ottawa_River.JPG/960px-Parliament_Hill_from_the_Ottawa_River.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-1.jpg?r=2" alt="ottawa-1" loading="lazy">
+      <span class="tag">ottawa-1</span>
+      <span class="meta">3333&times;2500 · CC BY-SA 2.5 ca</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Ottawa_skyline_panorama.jpg/960px-Ottawa_skyline_panorama.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-2.jpg?r=2" alt="ottawa-2" loading="lazy">
+      <span class="tag">ottawa-2</span>
+      <span class="meta">12675&times;2500 · CC BY-SA 2.5 ca</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Parliament_Hill_from_the_river_path.jpg/960px-Parliament_Hill_from_the_river_path.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-3.jpg?r=2" alt="ottawa-3" loading="lazy">
+      <span class="tag">ottawa-3</span>
+      <span class="meta">4896&times;2752 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Parliament_Hill_and_frozen_Ottawa_River_%289504298122%29.jpg/960px-Parliament_Hill_and_frozen_Ottawa_River_%289504298122%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-4.jpg?r=2" alt="ottawa-4" loading="lazy">
+      <span class="tag">ottawa-4</span>
+      <span class="meta">2592&times;1552 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Parliament_Hill_from_Gatineau.jpg/960px-Parliament_Hill_from_Gatineau.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-5.jpg?r=2" alt="ottawa-5" loading="lazy">
+      <span class="tag">ottawa-5</span>
+      <span class="meta">3648&times;2736 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Parliament_Ottawa_Canada.jpg/960px-Parliament_Ottawa_Canada.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/ottawa-6.jpg?r=2" alt="ottawa-6" loading="lazy">
+      <span class="tag">ottawa-6</span>
+      <span class="meta">3610&times;2402 · CC BY-SA 2.0</span>
+    </a></div><h2>Vancouver</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Vancouver_dusk_pano.jpg/960px-Vancouver_dusk_pano.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-1.jpg?r=2" alt="vancouver-1" loading="lazy">
+      <span class="tag">vancouver-1</span>
+      <span class="meta">9833&times;1000 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Vancouver-Skyline-Night_%2844931772%29.jpg/960px-Vancouver-Skyline-Night_%2844931772%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-2.jpg?r=2" alt="vancouver-2" loading="lazy">
+      <span class="tag">vancouver-2</span>
+      <span class="meta">2972&times;2225 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Vancouver_Night_Skyline_%2815141299159%29.jpg/960px-Vancouver_Night_Skyline_%2815141299159%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-3.jpg?r=2" alt="vancouver-3" loading="lazy">
+      <span class="tag">vancouver-3</span>
+      <span class="meta">4928&times;2771 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Night_skyline_-_Vancouver%2C_Canada_-_DSC00075.JPG/960px-Night_skyline_-_Vancouver%2C_Canada_-_DSC00075.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-4.jpg?r=2" alt="vancouver-4" loading="lazy">
+      <span class="tag">vancouver-4</span>
+      <span class="meta">5472&times;3648 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Night_skyline_-_Vancouver%2C_Canada_-_DSC00071.JPG/960px-Night_skyline_-_Vancouver%2C_Canada_-_DSC00071.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-5.jpg?r=2" alt="vancouver-5" loading="lazy">
+      <span class="tag">vancouver-5</span>
+      <span class="meta">4872&times;3147 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Night_skyline_-_Vancouver%2C_Canada_-_DSC00080.JPG/960px-Night_skyline_-_Vancouver%2C_Canada_-_DSC00080.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/vancouver-6.jpg?r=2" alt="vancouver-6" loading="lazy">
+      <span class="tag">vancouver-6</span>
+      <span class="meta">5472&times;3648 · CC0</span>
+    </a></div><h2>Banff / Alberta Rockies</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/960px-Moraine_Lake_17092005.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-1.jpg?r=2" alt="banff-1" loading="lazy">
+      <span class="tag">banff-1</span>
+      <span class="meta">2048&times;1536 · Public domain</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Moraine_Lake-Banff_NP.JPG/960px-Moraine_Lake-Banff_NP.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-2.jpg?r=2" alt="banff-2" loading="lazy">
+      <span class="tag">banff-2</span>
+      <span class="meta">2000&times;1429 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/1_moraine_lake_pano_2019.jpg/960px-1_moraine_lake_pano_2019.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-3.jpg?r=2" alt="banff-3" loading="lazy">
+      <span class="tag">banff-3</span>
+      <span class="meta">14949&times;7983 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%2CMoraine_Lake_%26_Mount_Fay_seen_from_Mount_Temple_Summit.jpg/960px-%2CMoraine_Lake_%26_Mount_Fay_seen_from_Mount_Temple_Summit.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-4.jpg?r=2" alt="banff-4" loading="lazy">
+      <span class="tag">banff-4</span>
+      <span class="meta">4608&times;2592 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/.Moraine_Lake_%26_Mount_Fay_seen_from_Mount_Temple_Summit.jpg/960px-.Moraine_Lake_%26_Mount_Fay_seen_from_Mount_Temple_Summit.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-5.jpg?r=2" alt="banff-5" loading="lazy">
+      <span class="tag">banff-5</span>
+      <span class="meta">4608&times;2592 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Moraine_Lake_%26_Mount_Fay.jpg/960px-Moraine_Lake_%26_Mount_Fay.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/banff-6.jpg?r=2" alt="banff-6" loading="lazy">
+      <span class="tag">banff-6</span>
+      <span class="meta">4608&times;2592 · CC BY-SA 4.0</span>
+    </a></div><h2>Calgary</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Calgary_night_skyline-msu-8964.jpg/960px-Calgary_night_skyline-msu-8964.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/calgary-1.jpg?r=2" alt="calgary-1" loading="lazy">
+      <span class="tag">calgary-1</span>
+      <span class="meta">6000&times;4000 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Calgary_night_skyline-msu-8962.jpg/960px-Calgary_night_skyline-msu-8962.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/calgary-2.jpg?r=2" alt="calgary-2" loading="lazy">
+      <span class="tag">calgary-2</span>
+      <span class="meta">5999&times;2901 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Calgary_night_skyline-msu-2020-1110-8957.jpg/960px-Calgary_night_skyline-msu-2020-1110-8957.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/calgary-4.jpg?r=2" alt="calgary-4" loading="lazy">
+      <span class="tag">calgary-4</span>
+      <span class="meta">5914&times;1768 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Calgary_night_skyline-msu-2020-1110-8980.jpg/960px-Calgary_night_skyline-msu-2020-1110-8980.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/calgary-5.jpg?r=2" alt="calgary-5" loading="lazy">
+      <span class="tag">calgary-5</span>
+      <span class="meta">5934&times;2202 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Calgary_By_Night._%288956015340%29.jpg/960px-Calgary_By_Night._%288956015340%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/calgary-6.jpg?r=2" alt="calgary-6" loading="lazy">
+      <span class="tag">calgary-6</span>
+      <span class="meta">3018&times;1738 · CC0</span>
+    </a></div><h2>Regina</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Saskatchewan_Legislative_Building_-_Regina.jpg/960px-Saskatchewan_Legislative_Building_-_Regina.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-1.jpg?r=2" alt="regina-1" loading="lazy">
+      <span class="tag">regina-1</span>
+      <span class="meta">3909&times;2345 · CC BY 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Saskatchewan_Legislative_Building_Front.JPG/960px-Saskatchewan_Legislative_Building_Front.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-2.jpg?r=2" alt="regina-2" loading="lazy">
+      <span class="tag">regina-2</span>
+      <span class="meta">3648&times;2736 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Saskatchewan_Legislative_Building_Grounds.JPG/960px-Saskatchewan_Legislative_Building_Grounds.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-3.jpg?r=2" alt="regina-3" loading="lazy">
+      <span class="tag">regina-3</span>
+      <span class="meta">3648&times;2736 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Saskatchewan_Legislative_Assembly_across_Wascana_Lake_-_Regina_%2830194746318%29.jpg/960px-Saskatchewan_Legislative_Assembly_across_Wascana_Lake_-_Regina_%2830194746318%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-4.jpg?r=2" alt="regina-4" loading="lazy">
+      <span class="tag">regina-4</span>
+      <span class="meta">4496&times;3000 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Legislative_Building_Dome_%288237248754%29.jpg/960px-Legislative_Building_Dome_%288237248754%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-5.jpg?r=2" alt="regina-5" loading="lazy">
+      <span class="tag">regina-5</span>
+      <span class="meta">4000&times;3000 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wascana_Lake_-_Regina_%2829125839967%29.jpg/960px-Wascana_Lake_-_Regina_%2829125839967%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/regina-6.jpg?r=2" alt="regina-6" loading="lazy">
+      <span class="tag">regina-6</span>
+      <span class="meta">4496&times;3000 · CC BY-SA 2.0</span>
+    </a></div><h2>Winnipeg</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Winnipeg_banner_The_Canadian_Museum_for_Human_Rights.JPG/960px-Winnipeg_banner_The_Canadian_Museum_for_Human_Rights.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-1.jpg?r=2" alt="winnipeg-1" loading="lazy">
+      <span class="tag">winnipeg-1</span>
+      <span class="meta">2870&times;957 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Canadian_Museum_for_Human_Rights%2C_The_Forks%2C_Winnipeg_%28502205%29_%2816357450397%29.jpg/960px-Canadian_Museum_for_Human_Rights%2C_The_Forks%2C_Winnipeg_%28502205%29_%2816357450397%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-2.jpg?r=2" alt="winnipeg-2" loading="lazy">
+      <span class="tag">winnipeg-2</span>
+      <span class="meta">3667&times;2063 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Canadian_Museum_for_Human_Rights%2C_The_Forks%2C_Winnipeg_%28502204%29_%2815909992814%29.jpg/960px-Canadian_Museum_for_Human_Rights%2C_The_Forks%2C_Winnipeg_%28502204%29_%2815909992814%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-3.jpg?r=2" alt="winnipeg-3" loading="lazy">
+      <span class="tag">winnipeg-3</span>
+      <span class="meta">3779&times;2126 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Canadian_Museum_for_Human_Rights%2C_Winnipeg_Canada_%2832640621918%29.jpg/960px-Canadian_Museum_for_Human_Rights%2C_Winnipeg_Canada_%2832640621918%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-4.jpg?r=2" alt="winnipeg-4" loading="lazy">
+      <span class="tag">winnipeg-4</span>
+      <span class="meta">5760&times;3840 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/CMHR_-_Canadian_Museum_for_Human_Rights%2C_Winnipeg%2C_MB_%2816763497237%29.jpg/960px-CMHR_-_Canadian_Museum_for_Human_Rights%2C_Winnipeg%2C_MB_%2816763497237%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-5.jpg?r=2" alt="winnipeg-5" loading="lazy">
+      <span class="tag">winnipeg-5</span>
+      <span class="meta">5184&times;3456 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Canadian_Museum_for_Human_Rights_under_Construction_03.JPG/960px-Canadian_Museum_for_Human_Rights_under_Construction_03.JPG" target="_blank" rel="noreferrer">
+      <img src="thumbs/winnipeg-6.jpg?r=2" alt="winnipeg-6" loading="lazy">
+      <span class="tag">winnipeg-6</span>
+      <span class="meta">3264&times;2448 · CC0</span>
+    </a></div><h2>Québec City</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ch%C3%A2teau_Frontenac_at_night%2C_Quebec_City%2C_Canada_2.jpg/960px-Ch%C3%A2teau_Frontenac_at_night%2C_Quebec_City%2C_Canada_2.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/quebec-1.jpg?r=2" alt="quebec-1" loading="lazy">
+      <span class="tag">quebec-1</span>
+      <span class="meta">7541&times;5091 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ch%C3%A2teau_Frontenac_after_a_freezing_rain_day_in_Quebec_city.jpg/960px-Ch%C3%A2teau_Frontenac_after_a_freezing_rain_day_in_Quebec_city.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/quebec-2.jpg?r=2" alt="quebec-2" loading="lazy">
+      <span class="tag">quebec-2</span>
+      <span class="meta">10640&times;5118 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ch%C3%A2teau_Frontenac_at_night%2C_Quebec_Ville%2C_Canada.jpg/960px-Ch%C3%A2teau_Frontenac_at_night%2C_Quebec_Ville%2C_Canada.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/quebec-3.jpg?r=2" alt="quebec-3" loading="lazy">
+      <span class="tag">quebec-3</span>
+      <span class="meta">5855&times;3747 · CC0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ch%C3%A2teau_Frontenac_city_at_night.jpg/960px-Ch%C3%A2teau_Frontenac_city_at_night.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/quebec-4.jpg?r=2" alt="quebec-4" loading="lazy">
+      <span class="tag">quebec-4</span>
+      <span class="meta">5488&times;2600 · CC BY-SA 4.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Qu%C3%A9bec_city_at_night%2C_view_from_L%C3%A9vis_city.jpg/960px-Qu%C3%A9bec_city_at_night%2C_view_from_L%C3%A9vis_city.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/quebec-5.jpg?r=2" alt="quebec-5" loading="lazy">
+      <span class="tag">quebec-5</span>
+      <span class="meta">5882&times;3860 · CC BY-SA 4.0</span>
+    </a></div><h2>Halifax</h2><div class="grid"><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Peggys_Cove_-_NS_-_Leuchtturm.jpg/960px-Peggys_Cove_-_NS_-_Leuchtturm.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-1.jpg?r=2" alt="halifax-1" loading="lazy">
+      <span class="tag">halifax-1</span>
+      <span class="meta">3685&times;2470 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Peggys_Cove_-_NS_-_Leuchtturm_3.jpg/960px-Peggys_Cove_-_NS_-_Leuchtturm_3.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-2.jpg?r=2" alt="halifax-2" loading="lazy">
+      <span class="tag">halifax-2</span>
+      <span class="meta">2500&times;1296 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Peggys_Cove_-_NS_-_Leuchtturm_bei_Sonnenuntergang.jpg/960px-Peggys_Cove_-_NS_-_Leuchtturm_bei_Sonnenuntergang.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-3.jpg?r=2" alt="halifax-3" loading="lazy">
+      <span class="tag">halifax-3</span>
+      <span class="meta">3872&times;2592 · CC BY-SA 3.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Peggys_Cove_Lighthouse_%2839030979315%29.jpg/960px-Peggys_Cove_Lighthouse_%2839030979315%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-4.jpg?r=2" alt="halifax-4" loading="lazy">
+      <span class="tag">halifax-4</span>
+      <span class="meta">3504&times;2336 · CC BY 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lighthouse_NS-00315_-_Peggys_Cove_Lighthouse_%2825642047121%29.jpg/960px-Lighthouse_NS-00315_-_Peggys_Cove_Lighthouse_%2825642047121%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-5.jpg?r=2" alt="halifax-5" loading="lazy">
+      <span class="tag">halifax-5</span>
+      <span class="meta">6000&times;4000 · CC BY-SA 2.0</span>
+    </a><a class="card" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lighthouse_DSC01066_-_Peggy%27s_Cove_Lighthouse_%287612052968%29.jpg/960px-Lighthouse_DSC01066_-_Peggy%27s_Cove_Lighthouse_%287612052968%29.jpg" target="_blank" rel="noreferrer">
+      <img src="thumbs/halifax-6.jpg?r=2" alt="halifax-6" loading="lazy">
+      <span class="tag">halifax-6</span>
+      <span class="meta">6035&times;4053 · CC BY-SA 2.0</span>
+    </a></div>
+<style>
+  body { padding-bottom: 6rem; }
+  .card { cursor: pointer; transition: transform .15s; }
+  .card:hover { transform: translateY(-2px); }
+  .card.selected { outline: 4px solid #9A8F4D; }
+  .card.selected::after {
+    content: "✓ PICKED"; position: absolute; top: .6rem; right: .6rem;
+    background: #9A8F4D; color: #fff; font-size: .75rem; font-weight: 700;
+    letter-spacing: .1em; padding: .3rem .6rem;
+  }
+  .view {
+    position: absolute; bottom: 2.4rem; right: .6rem; background: rgba(23,37,54,.85);
+    color: #fff; font-size: .72rem; padding: .3rem .6rem; letter-spacing: .05em;
+  }
+  .view:hover { background: #172536; }
+  .card[data-current] .tag { background: #9A8F4D; }
+  #pickbar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    background: #172536; color: #E4DED6; font-size: .85rem;
+    padding: .9rem clamp(1rem, 4vw, 3rem); box-shadow: 0 -8px 24px rgba(16,27,40,.3);
+  }
+  #pickbar b { color: #B3A65C; }
+</style>
+<div id="pickbar">Your picks: <span id="picklist"><i>none yet</i></span></div>
+<script>
+(function () {
+  var CURRENT = ['toronto', 'niagara', 'montreal', 'ottawa', 'vancouver', 'banff', 'regina'];
+  var picks = {};
+  try { picks = JSON.parse(localStorage.getItem('praxisPicksV2') || '{}'); } catch (e) {}
+
+  // Inject a "keep current" card at the front of each city that has a live photo
+  document.querySelectorAll('.grid').forEach(function (grid) {
+    var first = grid.querySelector('.tag');
+    if (!first) return;
+    var city = first.textContent.replace(/-\d+$/, '');
+    if (CURRENT.indexOf(city) === -1) return;
+    var a = document.createElement('a');
+    a.className = 'card';
+    a.setAttribute('data-current', '1');
+    a.href = '../assets/landmarks/' + city + '.jpg';
+    a.target = '_blank';
+    a.innerHTML = '<img src="../assets/landmarks/' + city + '.jpg" alt="' + city + '-current" loading="lazy">' +
+      '<span class="tag">' + city + '-current · on the site now</span>' +
+      '<span class="meta">the photo currently in the rotation</span>';
+    grid.insertBefore(a, grid.firstChild);
+  });
+
+  var cards = document.querySelectorAll('.card');
+
+  function cityOf(card) { return card.querySelector('img').alt.replace(/-(\d+|current)$/, ''); }
+  function idOf(card) { return card.querySelector('img').alt; }
+
+  function render() {
+    cards.forEach(function (c) { c.classList.toggle('selected', picks[cityOf(c)] === idOf(c)); });
+    var ids = Object.keys(picks).map(function (k) { return picks[k]; });
+    document.getElementById('picklist').innerHTML = ids.length
+      ? ids.map(function (i) { return '<b>' + i + '</b>'; }).join(' · ')
+      : '<i>none yet</i>';
+    localStorage.setItem('praxisPicksV2', JSON.stringify(picks));
+    window.praxisPicks = picks;
+  }
+
+  cards.forEach(function (card) {
+    var view = document.createElement('span');
+    view.className = 'view';
+    view.textContent = 'full size ⤢';
+    view.addEventListener('click', function (e) {
+      e.preventDefault(); e.stopPropagation();
+      window.open(card.href, '_blank');
+    });
+    card.appendChild(view);
+
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      var city = cityOf(card), id = idOf(card);
+      picks[city] === id ? delete picks[city] : picks[city] = id;
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
+</body></html>
