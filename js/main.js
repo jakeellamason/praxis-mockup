@@ -55,6 +55,21 @@ const onScroll = () => {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
+// Hero landmark cycle — in production, the first slide would be chosen by visitor region
+const slides = [...document.querySelectorAll('.hero-media-frame img')];
+const placeEl = document.querySelector('.media-place');
+
+if (slides.length > 1 && !reduceMotion) {
+  let current = 0;
+  setInterval(() => {
+    const next = (current + 1) % slides.length;
+    slides[current].classList.remove('is-active');
+    slides[next].classList.add('is-active');
+    placeEl.innerHTML = slides[next].dataset.caption;
+    current = next;
+  }, 6000);
+}
+
 // Mobile nav
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.querySelector('.nav-menu');

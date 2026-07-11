@@ -242,8 +242,76 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
 
 .hero-inner {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: clamp(2.5rem, 6vw, 5.5rem);
+  align-items: center;
   width: 100%;
-  padding-block: clamp(5rem, 13vh, 9rem) clamp(4rem, 9vh, 6rem);
+  padding-block: clamp(4rem, 10vh, 7rem) clamp(3.5rem, 8vh, 5.5rem);
+}
+
+.hero-media { margin: 0; }
+
+.hero-media-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--ivory);
+  box-shadow: 0 40px 80px -48px rgba(16, 27, 40, 0.55);
+}
+
+.hero-media-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.4s var(--ease-out), transform 7s linear;
+}
+
+.hero-media-frame img.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-media-caption {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  margin-top: 1.1rem;
+  border-top: 1px solid rgba(23, 37, 54, 0.14);
+}
+
+.hero-media-caption::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 3.5rem;
+  height: 3px;
+  background: var(--gold);
+}
+
+.media-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.media-place {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--slate-deep);
+  text-align: right;
 }
 
 .hero h1 { margin-bottom: 2.25rem; max-width: 9em; }
@@ -878,6 +946,8 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-media-frame { aspect-ratio: 16 / 10; }
   .strip-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .careers-grid { grid-template-columns: 1fr; }
   .section-head-split { grid-template-columns: 1fr; align-items: start; }
