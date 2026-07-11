@@ -244,7 +244,7 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   position: relative;
   display: flex;
   align-items: center;
-  min-height: min(82svh, 880px);
+  min-height: min(86svh, 920px);
 }
 
 .hero-inner {
@@ -253,12 +253,29 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   padding-block: clamp(4rem, 10vh, 7rem);
 }
 
-.hero-copy { max-width: min(34em, 52%); }
+.hero-copy { max-width: 34em; }
+
+.hero .eyebrow { color: rgba(228, 222, 214, 0.9); }
+
+.hero h1 { color: var(--white); }
+
+.hero h1 em { color: var(--gold-bright); }
+
+.hero .lede { color: rgba(228, 222, 214, 0.88); }
+
+.hero .btn-quiet { color: rgba(228, 222, 214, 0.85); }
+
+.hero .btn-quiet:hover { color: var(--white); border-color: rgba(228, 222, 214, 0.5); }
+
+.hero .btn-rule { color: var(--gold-bright); border-color: var(--gold-bright); }
+
+.hero .btn-rule:hover { color: var(--white); border-color: var(--white); }
+
+.hero-chevrons { display: none; }
 
 .hero-media {
   position: absolute;
-  inset: 0 0 0 auto;
-  width: 46vw;
+  inset: 0;
 }
 
 .hero-media-frame {
@@ -266,15 +283,16 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(--ivory);
+  background: var(--ink);
 }
 
 .hero-media-frame::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, var(--white), rgba(255, 255, 255, 0) 22%),
-              linear-gradient(0deg, rgba(23, 37, 54, 0.08), transparent 30%);
+  background:
+    linear-gradient(90deg, rgba(16, 27, 40, 0.82) 0%, rgba(16, 27, 40, 0.55) 34%, rgba(16, 27, 40, 0.12) 68%, rgba(16, 27, 40, 0.25) 100%),
+    linear-gradient(0deg, rgba(16, 27, 40, 0.55), transparent 32%);
   pointer-events: none;
 }
 
@@ -926,10 +944,11 @@ h1 em, h2 em { font-style: italic; font-weight: 300; }
 /* ---------- Responsive ---------- */
 
 @media (max-width: 960px) {
-  .hero-body { display: block; min-height: 0; }
-  .hero-copy { max-width: 34em; }
-  .hero-media { position: static; width: 100%; height: clamp(280px, 52vw, 460px); }
-  .hero-media-frame::after { background: linear-gradient(0deg, var(--white), rgba(255, 255, 255, 0) 18%); }
+  .hero-body { min-height: min(78svh, 720px); }
+  .hero-media-frame::after {
+    background:
+      linear-gradient(180deg, rgba(16, 27, 40, 0.35), rgba(16, 27, 40, 0.62) 55%, rgba(16, 27, 40, 0.8) 100%);
+  }
   .strip-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .careers-grid { grid-template-columns: 1fr; }
   .section-head-split { grid-template-columns: 1fr; align-items: start; }
